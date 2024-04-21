@@ -39,11 +39,20 @@ Recommendations for Enhanced Model Accuracy and Robustness
 To further improve the model's performance and reduce loss towards zero, the following strategies are recommended:
 
 Enhance Data Quality and Quantity: Acquiring more diverse and representative data can help in training a more robust model.
+
 Model Architecture Tuning: Experimenting with different architectures, including deeper networks or different types of layers, may yield better results.
+
 Advanced Regularization Techniques: Besides dropout, employing L1 or L2 regularization could help in further reducing overfitting.
+
 Optimization Adjustments: Tweaking the optimizer settings or trying different optimizers like SGD or RMSprop might improve training dynamics.
+
 Early Stopping: Implementing early stopping in training can prevent overfitting by halting the training process when validation performance degrades.
+
 Fine-tuning and Hyperparameter Optimization: Systematic tuning of model parameters like learning rate, batch size, and the number of epochs based on cross-validation results can significantly enhance model performance.
+![Screenshot 2024-04-20 224235](https://github.com/JohnBagshaw/Python-Projects-AI-ML-and-others-/assets/84130776/63603b21-aad7-4698-b8d1-216187ccf000)
+![Screenshot 2024-04-20 224257](https://github.com/JohnBagshaw/Python-Projects-AI-ML-and-others-/assets/84130776/785b2565-c765-43a5-a536-da919eba5b8a)
+
+
 
 Conclusion
 
