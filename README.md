@@ -1,4 +1,34 @@
 # Python-Projects (AI, ML,  DL and others)
+## Optimized Deep Learning Model for Detecting and Classifying GNSS Signals
+
+Enhanced Model Configuration:
+
+The model's layers are now doubled to 256 neurons, increasing the capacity of the model to learn from a larger dataset.
+
+L2 regularization (kernel_regularizer='l2') is added to each Dense layer. This modification helps further in mitigating overfitting by penalizing the weights if they grow too large, promoting simpler models that may generalize better on new, unseen data.
+
+Optimization and Compilation:
+
+Changed the optimizer to rmsprop, another adaptive learning rate optimizer, known for its effectiveness in recurrent neural networks and often performs well on different kinds of problems.
+
+Increased the batch size to 64 and doubled the number of epochs to 100, allowing the model more time and data to learn.
+
+Increased the validation split to 20%, providing a larger set of unseen data for validating the model's performance during training.
+
+Early Stopping Implementation:
+
+Implements an EarlyStopping callback with monitor='val_loss' and patience=100. This mechanism will halt the training if the validation loss does not improve for 100 consecutive epochs. This is a significant change aimed at preventing overfitting and optimizing computational resources by stopping training when additional training does not lead to better generalization on validation data.
+
+Model Training and Validation:
+
+Both the old and new codes (optimized version) include training the model with features (x_train) and labels (y_train), but the new code utilizes updated parameters for training that reflect the changes in the model's configuration and optimization strategy.
+
+Visualization Enhancements:
+
+Both codes visualize the training and validation accuracy and loss. However, the new code likely observes different dynamics in these metrics due to the increased complexity and enhanced training regimen.
+
+These changes collectively aim to improve the model's ability to learn from a larger dataset and enhance its generalization capabilities on new, unseen GNSS signal data. The adjustments in the training process and model architecture are strategic, aligning with common practices to improve deep learning model performance.
+
 ## Deep Learning Model for Detecting and Classifying GNSS Signals
 
 The development and evaluation of a deep learning model aimed at detecting and classifying the integrity of GNSS signals across three categories: normal, spoofed, and jammed. Using Python libraries such as TensorFlow and Pandas, the model was trained and tested on a synthesized dataset to ensure it can accurately differentiate between these states, which is crucial for enhancing the security and robustness of GNSS receivers.
