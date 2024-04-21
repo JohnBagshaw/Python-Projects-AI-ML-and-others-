@@ -29,6 +29,11 @@ Both codes visualize the training and validation accuracy and loss. However, the
 
 These changes collectively aim to improve the model's ability to learn from a larger dataset and enhance its generalization capabilities on new, unseen GNSS signal data. The adjustments in the training process and model architecture are strategic, aligning with common practices to improve deep learning model performance.
 
+![Screenshot 2024-04-21 113523](https://github.com/JohnBagshaw/Python-Projects-AI-ML-and-others-/assets/84130776/3fcdd328-18ba-46fb-b435-b9ed94a293bb)
+
+![Screenshot 2024-04-21 113546](https://github.com/JohnBagshaw/Python-Projects-AI-ML-and-others-/assets/84130776/523f5627-1151-4ea8-b88b-6e2df7353eec)
+
+
 ## Deep Learning Model for Detecting and Classifying GNSS Signals
 
 The development and evaluation of a deep learning model aimed at detecting and classifying the integrity of GNSS signals across three categories: normal, spoofed, and jammed. Using Python libraries such as TensorFlow and Pandas, the model was trained and tested on a synthesized dataset to ensure it can accurately differentiate between these states, which is crucial for enhancing the security and robustness of GNSS receivers.
